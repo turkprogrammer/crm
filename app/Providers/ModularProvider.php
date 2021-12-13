@@ -30,7 +30,7 @@ class ModularProvider extends ServiceProvider {
 
         if ($modules) {
             Route::group([
-                'prefix' => LocalizationService::locale() //мультиязычные маршруты
+                'prefix' => ''// LocalizationService::locale() //мультиязычные маршруты
                     ], function () use ($modules, $path) {
                         //ключ Parent module value Child  module
                         foreach ($modules as $mod => $submodules) {
